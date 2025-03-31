@@ -4,6 +4,7 @@
 
 int main(){
     printf("Hello World\n");
-    printf("this is another test")
-    printf("this is another another test")
+    printf("this is another test");
+    printf("this is another another test");
+    printf("this is another another another test");
 }
