@@ -46,22 +46,24 @@ int main(int argc, char *argv[]){
         }
     }
 
-    in_int = strtol(argv[2],NULL,10); // If we passed the for loop we know the second argument is an int
+    errno = 0;      //Sets errno to zero for error checking
 
-    if(in_int<1 || in_int > 100){ //Check bounds of integer value
-        printf("Second argument must be an integer between 1 and 100.\nExpected input: asciitotal string integer(1-100)\n");
-        exit(EXIT_FAILURE);
-    }
+    in_int = strtol(argv[2],NULL,BASE);     // If we passed the for loop we know the second argument is an int
 
     //check errno
     if(errno > 0){
+        printf("Failure likely due to integer value out of bounds\nInteger value is limited 1-100\nExpected input: asciitotal string integer(1-100)\n");
         printf("error #:%i\n",errno);
         exit(EXIT_FAILURE);
     }
 
+    if(in_int<1 || in_int > 100){       //Check bounds of integer value
+        printf("Second argument must be an integer between 1 and 100.\nExpected input: asciitotal string integer(1-100)\n");
+        exit(EXIT_FAILURE);
+    }
+
+    //Print final output
     printf("The ASCII total of the string = %i\nThe total * multiplier = \t%i\n",total, total*in_int);
-
-
 
     return 0;
 }
