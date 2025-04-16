@@ -17,3 +17,5 @@ echo $?
 echo $?
 ./asciitotal hello 9999999999999999999999999
 echo $?
+./asciitotal hello 500
+echo $?

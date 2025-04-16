@@ -1,3 +1,10 @@
+# -------------------------------------------------------
+# Name: John Rolfe
+#
+# Description: This file will make the exexutable asciitotal
+# and create a tar file containing this make file and 
+# asciitotal.c
+# -------------------------------------------------------
 all:asciitotal
 
 asciitotal:asciitotal.c
