@@ -1,0 +1,19 @@
+#!/bin/bash
+./asciitotal
+echo $?
+./asciitotal hello
+echo $?
+./asciitotal hello world
+echo $? 
+./asciitotal hello world 1
+echo $?
+./asciitotal Jan 3rd
+echo $?
+./asciitotal hello 0
+echo $? 
+./asciitotal hello 101
+echo $? 
+./asciitotal hello 1.1
+echo $?
+./asciitotal hello 9999999999999999999999999
+echo $?

@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/john/local_repository/cs3040/proj1'
+gcc -Wall asciitotal.c -o asciitotal
+make: Leaving directory '/home/john/local_repository/cs3040/proj1'
+ 

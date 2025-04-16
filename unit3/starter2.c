@@ -14,11 +14,11 @@ int main(void)
     greeting();
 
 
-    char input[10];
+    char input[100];
     int inputValue;
 
     printf("Enter an integer:");
-    scanf("%9s",input);
+    scanf("%99s",input);
     inputValue = strtol(input,NULL,10);
     printf("Half of %i is %.2f\n", inputValue, half(inputValue));
 

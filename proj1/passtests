@@ -1,0 +1,11 @@
+#!/bin/bash
+./asciitotal hello 1
+echo $?
+./asciitotal world 10
+echo $? 
+./asciitotal W 100
+echo $?
+./asciitotal hello 3
+echo $?
+./asciitotal hello 500
+echo $?
