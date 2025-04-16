@@ -1,7 +1,7 @@
 // ------------------------------------------------------
 // File: asciitotal.c
 //
-// Name: First Last
+// Name: John Rolfe
 //
 // Description: This program returns the ascii total of a
 // string (it's ascii values summed together) multiplied by
