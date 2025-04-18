@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<errno.h>
 
 void greeting(){
     printf("Hello World\n");
@@ -19,7 +20,12 @@ int main(void)
 
     printf("Enter an integer:");
     scanf("%99s",input);
+    errno = 0;
     inputValue = strtol(input,NULL,10);
+    if(errno != 0){
+        printf("Error # %i", errno);
+        exit(EXIT_FAILURE);
+    }
     printf("Half of %i is %.2f\n", inputValue, half(inputValue));
 
     return EXIT_SUCCESS;
