@@ -4,10 +4,11 @@
 // Name: John Rolfe
 //
 // Description: This program will draw the number of dots
-// specified on the terminal screen.
-
+// specified on the terminal screen. Number of dots is 
+// limited to between 1 and 100 dots.
+//
 // Syntax:
-// Expected input: ./dots integer
+// Expected input: ./dots integer(1-100)
 // Example: ./dots 6
 // ------------------------------------------------------
 
@@ -24,6 +25,7 @@
 #define CLEAR_SCREEN "\x1b[2J"
 #define MOVE_CURSOR "\x1b[%i;%iH"
 #define NUMBER_BASE 10
+#define MAX_DOTS 100
 
 void display_dots(const long int number){
     int result = 0;
@@ -39,6 +41,8 @@ void display_dots(const long int number){
     }
     max_rows = win.ws_row;
     max_cols = win.ws_col;
+
+    sleep(1);
 
     //Loop through and draw the required number of dots
     printf(CLEAR_SCREEN);
@@ -70,6 +74,11 @@ int check_inputs(int argument_number, char* argument_array[]){
     num = strtol(argument_array[1],&my_pointer,NUMBER_BASE);
     if(errno != 0){
         printf("Error in converting argument to integer\nERROR #: %i\n", errno);
+        exit(EXIT_FAILURE);
+    }
+
+    if(num <= 0 || num >MAX_DOTS){
+        printf("Requested number of dots must be between 1 and 100\n");
         exit(EXIT_FAILURE);
     }
     

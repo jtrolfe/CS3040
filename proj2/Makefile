@@ -1,9 +1,9 @@
 # -------------------------------------------------------
 # Name: John Rolfe
 #
-# Description: This file will make the exexutable asciitotal
+# Description: This file will make the exexutable dots
 # and create a tar file containing this make file and 
-# asciitotal.c
+# dots.c
 # -------------------------------------------------------
 all:dots
 

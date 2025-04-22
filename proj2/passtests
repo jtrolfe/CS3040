@@ -1,0 +1,7 @@
+#!/bin/bash
+./dots 1
+echo $?
+./dots 10
+echo $?
+./dots 100
+echo $?

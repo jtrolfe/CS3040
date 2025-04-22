@@ -1,0 +1,15 @@
+#!/bin/bash
+./dots
+echo $?
+./dots 10 10
+echo $?
+./dots 0
+echo $?
+./dots 101
+echo $?
+./dots 3rd
+echo $?
+./dots 1.1
+echo $?
+./dots 9999999999999999999999999
+echo $?

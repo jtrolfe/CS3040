@@ -1,5 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/john/local_repository/cs3040/proj1'
-make: Nothing to be done for 'all'.
-make: Leaving directory '/home/john/local_repository/cs3040/proj1'
- 
