@@ -10,6 +10,7 @@
 // Syntax:
 // Expected input: ./dots integer(1-100)
 // Example: ./dots 6
+// Test
 // ------------------------------------------------------
 
 
