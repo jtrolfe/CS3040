@@ -5,10 +5,10 @@
 # and create a tar file containing this make file and 
 # asciitotal.c
 # -------------------------------------------------------
-all:asciitotal
+all:asciitotal asciitotal.tar
 
 asciitotal:asciitotal.c
 	gcc -Wall asciitotal.c -o asciitotal
 
-asciitotal.tar:asciitotal asciitotal.c
+asciitotal.tar:asciitotal asciitotal.c Makefile
 	tar -cvf asciitotal.tar Makefile asciitotal.c
