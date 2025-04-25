@@ -5,13 +5,13 @@
 # and create a tar file containing this make file and 
 # dots.c
 # -------------------------------------------------------
-all:dots
+all:dots proj2.tar
 
 dots:dots.c
 	gcc -Wall dots.c -o dots
 
-dots.tar:dots dots.c
-	tar -cvf dots.tar Makefile dots.c
+proj2.tar:dots dots.c Makefile
+	tar -cvf proj2.tar Makefile dots.c
 
 clean:
 	rm dots
