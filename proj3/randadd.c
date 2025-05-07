@@ -33,6 +33,8 @@
 #define MAX_NUMBER     42
 #define MAX_VALUE      50
 #define BASE_10        10
+#define CHAR_RED        "\x1b[31m"  /* to set color to red */
+#define CHAR_RESET      "\x1b[0m"   /* to reset color to default */
 
 // return codes
 #define SUCCESS        0
@@ -103,7 +105,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    printf("HERE HERE HERE");
+
     // Calculate and print the sum of the linked list
     if (result == SUCCESS) {
         result = calc_total(start, &total);
@@ -118,10 +120,13 @@ int main(int argc, char *argv[])
     // Free up the linked list memory
     if (start != NULL) {
         current = start;
+        value_t *next   = NULL;
+
         start = NULL;
-        while (current->next != NULL) {
+        while (current != NULL) {
+            next = current->next;   //Memory issue added temp node to track list
             free(current);
-            current = current->next;
+            current = next; 
         }
     }
 
@@ -158,6 +163,7 @@ int get_input(int argc, char *argv[], int *num)
     if (argc != 2) {
         printf("Expected one argument\nExample: ./randadd integer\n");
         result = BAD_INPUT;
+        return result;
     }
 
     errno = 0;
@@ -196,24 +202,24 @@ int get_input(int argc, char *argv[], int *num)
 //     This function walks through the linked list, printing out each
 //     value in the list.
 // ---------------------------------------------------------------------
-int print_list(value_t *start)
-{
+int print_list(value_t *start) {
     int result = SUCCESS;
     int count = 1;
     value_t *current = start;
 
-    if(start == NULL){
+    if (start == NULL) {
         result = BAD_POINTER;
-        printf("Bad pointer was passed");
+        printf("Bad pointer was passed\n");
         return result;
     }
 
-    do{
-        if(current != NULL){
-            printf("Value %i = \t%2i\n",count++,current->val);
-        }
+    while (current != NULL) {
+        printf("Value %2i = ", count++);
+        printf(CHAR_RED);
+        printf("%2i\n", current->val);
+        printf(CHAR_RESET);
         current = current->next;
-    }while (current != NULL);
+    }
 
     return result;
 } // end print_list
@@ -240,8 +246,6 @@ int calc_total(value_t *start, long int *total)
 {
 
     int result = SUCCESS;
-    int count = 1;
-    value_t *next  = NULL;
     value_t *current = start;
 
     if(start == NULL){
@@ -250,13 +254,11 @@ int calc_total(value_t *start, long int *total)
         return result;
     }
 
-    next = current->next;
 
-    do{
+    while(current != NULL){
         *total = *total + current->val;
-        current = next;
-        next = current->next;  
-    }while(current != NULL);
+        current = current->next;  
+    }
 
     return result;
 } // end calc_total
@@ -290,6 +292,7 @@ int build_list(const int num, value_t *start)
     value_t *last = NULL;
     value_t *new  = NULL;
 
+
     // verify passed pointer is valid
     if (start == NULL) {
         printf("Error: unexpected NULL pointer in build_list\n");
@@ -316,6 +319,7 @@ int build_list(const int num, value_t *start)
                 }
                 break;
             }
+            
             new->val   = (random() % MAX_VALUE) + 1;
             new->next  = NULL;
             last->next = new;

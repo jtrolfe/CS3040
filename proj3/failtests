@@ -1,0 +1,15 @@
+#!/bin/bash
+./randadd
+echo $?
+./randadd 3 hello
+echo $?
+./randadd 3rd
+echo $?
+./randadd 43
+echo $?
+./randadd 9999999999999999999999999
+echo $?
+./randadd 1.1
+echo $?
+./randadd 20 20
+echo $?

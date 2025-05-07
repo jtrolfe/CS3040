@@ -5,13 +5,13 @@
 # and create a tar file containing this make file and 
 # dots.c
 # -------------------------------------------------------
-all:randadd proj3.tar
+all:randadd
 
 randadd:randadd.c
 	gcc -Wall -g randadd.c -o randadd
 
-proj3.tar:randadd randadd.c Makefile
-	tar -cvf proj2.tar Makefile randadd.c
+proj3.tar:randadd.c Makefile
+	tar -cvf proj3.tar Makefile randadd.c
 
 clean:
-	rm randadd
+	rm -f randadd

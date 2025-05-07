@@ -1,0 +1,7 @@
+#!/bin/bash
+./randadd 1
+echo $?
+./randadd 10
+echo $?
+./randadd 42
+echo $?
