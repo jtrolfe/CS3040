@@ -28,6 +28,8 @@
 #define MAX_NUMBER     20
 #define MAX_VALUE      500500500
 #define BASE_10        10
+#define COL_WIDTH      12
+#define COUNT_WIDTH    2
 #define CHAR_RED        "\x1b[31m"  /* to set color to red */
 #define CHAR_RESET      "\x1b[0m"   /* to reset color to default */
 
@@ -167,9 +169,9 @@ int print_values(unsigned int* start, unsigned int num){
     for(int i = 0; i<num;i++){                                  //Loop through and add
         if(start[i] < (UINT_MAX - total)){                      //Check for overflow
             total += start[i];
-            printf("%2i     %12u     %12u\n",i+1,start[i], total);
+            printf("%*i     %*u     %*u\n",COUNT_WIDTH,i+1,COL_WIDTH,start[i],COL_WIDTH,total);
         }else{
-            printf("%2i     %12u     %12u ",i+1,start[i], total);
+            printf("%*i     %*u     %*u ",COUNT_WIDTH,i+1,COL_WIDTH,start[i],COL_WIDTH,total);
             printf(CHAR_RED);
             printf("WOULD CAUSE OVERLFOW\n");
             printf(CHAR_RESET);
