@@ -28,7 +28,7 @@ HEADERS=play.h score.h screen.h
 
 # The following sets all compile flags at once, allowing you to change
 # them all in one place whenever needed.
-CFLAGS=-Wall -c -g
+CFLAGS=-Wall -c -g 
 
 # Targets
 all: yahtzee

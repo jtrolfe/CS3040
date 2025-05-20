@@ -1,0 +1,58 @@
+Capturing on 'wlp0s20f3'
+    1 0.000000000 172.20.145.76 → 224.0.0.251  MDNS 272 Standard query response 0x0000 PTR Ethan_Surface._dosvc._tcp.local SRV 0 0 7680 Ethan_Surface.local TXT
+    2 0.000000495 172.20.145.76 → 224.0.0.251  MDNS 91 Standard query 0x0000 ANY Ethan_Surface._dosvc._tcp.local, "QM" question
+    3 0.000066594 fe80::22a0:ae88:799e:7d85 → ff02::fb     MDNS 292 Standard query response 0x0000 PTR Ethan_Surface._dosvc._tcp.local SRV 0 0 7680 Ethan_Surface.local TXT
+    4 0.000066966 fe80::22a0:ae88:799e:7d85 → ff02::fb     MDNS 111 Standard query 0x0000 ANY Ethan_Surface._dosvc._tcp.local, "QM" question
+    5 0.202391898 fe80::22a0:ae88:799e:7d85 → ff02::fb     MDNS 111 Standard query 0x0000 ANY Ethan_Surface._dosvc._tcp.local, "QM" question
+    6 0.206857095 172.20.145.84 → 255.255.255.255 UDP 125 10004 → 10004 Len=83
+    7 0.206858627 172.20.145.84 → 172.20.159.255 UDP 70 58672 → 22222 Len=28
+    8 0.206857965 172.20.145.84 → 172.20.159.255 UDP 70 58664 → 22222 Len=28
+    9 0.206859431 172.20.145.84 → 172.20.159.255 UDP 56 58680 → 3289 Len=14
+   10 0.206858855 172.20.145.76 → 224.0.0.251  MDNS 91 Standard query 0x0000 ANY Ethan_Surface._dosvc._tcp.local, "QM" question
+   11 0.511593519 172.20.145.76 → 224.0.0.251  MDNS 91 Standard query 0x0000 ANY Ethan_Surface._dosvc._tcp.local, "QM" question
+   12 0.513680913 fe80::22a0:ae88:799e:7d85 → ff02::fb     MDNS 111 Standard query 0x0000 ANY Ethan_Surface._dosvc._tcp.local, "QM" question
+   13 0.581062107 Intel_5c:19:53 → RuckusWirele_6d:55:66 ARP 42 Who has 172.20.144.1? Tell 172.20.154.4
+   14 0.589115240 RuckusWirele_6d:55:66 → Intel_5c:19:53 ARP 60 172.20.144.1 is at c0:c5:20:6d:55:66
+   15 0.919337450 172.20.145.76 → 224.0.0.251  MDNS 335 Standard query response 0x0000 PTR, cache flush Ethan_Surface._dosvc._tcp.local SRV, cache flush 0 0 7680 Ethan_Surface.local TXT, cache flush A, cache flush 172.20.145.76 AAAA, cache flush fe80::22a0:ae88:799e:7d85
+   16 0.919337876 172.20.145.76 → 224.0.0.251  MDNS 273 Standard query response 0x0000 SRV, cache flush 0 0 7680 Ethan_Surface.local TXT, cache flush A, cache flush 172.20.145.76 AAAA, cache flush fe80::22a0:ae88:799e:7d85
+   17 0.919675954 fe80::22a0:ae88:799e:7d85 → ff02::fb     MDNS 355 Standard query response 0x0000 PTR, cache flush Ethan_Surface._dosvc._tcp.local SRV, cache flush 0 0 7680 Ethan_Surface.local TXT, cache flush A, cache flush 172.20.145.76 AAAA, cache flush fe80::22a0:ae88:799e:7d85
+   18 0.919676260 fe80::22a0:ae88:799e:7d85 → ff02::fb     MDNS 293 Standard query response 0x0000 SRV, cache flush 0 0 7680 Ethan_Surface.local TXT, cache flush A, cache flush 172.20.145.76 AAAA, cache flush fe80::22a0:ae88:799e:7d85
+   19 1.329922309 fe80::d1c6:c32c:5c5a:4d76 → ff02::fb     MDNS 107 Standard query 0x0000 PTR _spotify-connect._tcp.local, "QM" question
+   20 1.335253258 172.20.148.74 → 224.0.0.251  MDNS 87 Standard query 0x0000 PTR _spotify-connect._tcp.local, "QM" question
+   21 1.535383725 172.20.65.70 → 172.20.154.4 TCP 66 59925 → 7680 [SYN] Seq=0 Win=64240 Len=0 MSS=1366 WS=256 SACK_PERM
+   22 1.535420108 172.20.154.4 → 172.20.65.70 TCP 54 7680 → 59925 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+   23 1.537110901 172.20.148.74 → 239.255.255.250 SSDP 167 M-SEARCH * HTTP/1.1 
+   24 2.045049542 172.20.145.84 → 255.255.255.255 UDP 125 10004 → 10004 Len=83
+   25 2.558739667 172.20.65.70 → 172.20.154.4 TCP 66 [TCP Port numbers reused] 59925 → 7680 [SYN] Seq=0 Win=64240 Len=0 MSS=1366 WS=256 SACK_PERM
+   26 2.558777740 172.20.154.4 → 172.20.65.70 TCP 54 7680 → 59925 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+   27 3.171988010 172.20.145.84 → 172.20.159.255 UDP 70 58672 → 22222 Len=28
+   28 3.171991339 172.20.145.84 → 255.255.255.255 UDP 125 10004 → 10004 Len=83
+   29 3.171992370 172.20.65.70 → 172.20.154.4 TCP 66 [TCP Port numbers reused] 59925 → 7680 [SYN] Seq=0 Win=64240 Len=0 MSS=1366 WS=256 SACK_PERM
+   30 3.171989893 172.20.145.84 → 172.20.159.255 UDP 56 58680 → 3289 Len=14
+   31 3.171990709 172.20.145.84 → 172.20.159.255 UDP 70 58664 → 22222 Len=28
+   32 3.172024775 172.20.154.4 → 172.20.65.70 TCP 54 7680 → 59925 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+   33 3.480324919 172.20.152.234 → 224.0.0.251  MDNS 202 Standard query response 0x0000 PTR Sarah._dosvc._tcp.local SRV 0 0 7680 Sarah.local TXT
+   34 3.480325346 172.20.152.234 → 224.0.0.251  MDNS 83 Standard query 0x0000 ANY Sarah._dosvc._tcp.local, "QM" question
+   35 3.480790897 fe80::5f73:fb39:41b3:e465 → ff02::fb     MDNS 222 Standard query response 0x0000 PTR Sarah._dosvc._tcp.local SRV 0 0 7680 Sarah.local TXT
+   36 3.480791193 fe80::5f73:fb39:41b3:e465 → ff02::fb     MDNS 103 Standard query 0x0000 ANY Sarah._dosvc._tcp.local, "QM" question
+   37 3.683696538 fe80::5f73:fb39:41b3:e465 → ff02::fb     MDNS 103 Standard query 0x0000 ANY Sarah._dosvc._tcp.local, "QM" question
+   38 3.692704429 172.20.152.234 → 224.0.0.251  MDNS 83 Standard query 0x0000 ANY Sarah._dosvc._tcp.local, "QM" question
+   39 3.692705055 172.20.65.70 → 172.20.154.4 TCP 66 [TCP Port numbers reused] 59925 → 7680 [SYN] Seq=0 Win=64240 Len=0 MSS=1366 WS=256 SACK_PERM
+   40 3.692741575 172.20.154.4 → 172.20.65.70 TCP 54 7680 → 59925 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+   41 3.780126860 172.20.152.220 → 224.0.0.251  MDNS 275 Standard query response 0x0000 PTR theMothership7._dosvc._tcp.local SRV 0 0 7680 theMothership7.local TXT
+   42 3.789225584 fe80::9f6e:2c76:65ea:5cee → ff02::fb     MDNS 295 Standard query response 0x0000 PTR theMothership7._dosvc._tcp.local SRV 0 0 7680 theMothership7.local TXT
+   43 3.796865939 172.20.152.220 → 224.0.0.251  MDNS 92 Standard query 0x0000 ANY theMothership7._dosvc._tcp.local, "QM" question
+   44 3.807326934 fe80::9f6e:2c76:65ea:5cee → ff02::fb     MDNS 112 Standard query 0x0000 ANY theMothership7._dosvc._tcp.local, "QM" question
+   45 3.995305239 fe80::5f73:fb39:41b3:e465 → ff02::fb     MDNS 103 Standard query 0x0000 ANY Sarah._dosvc._tcp.local, "QM" question
+   46 3.995784987 172.20.152.234 → 224.0.0.251  MDNS 83 Standard query 0x0000 ANY Sarah._dosvc._tcp.local, "QM" question
+   47 4.070920697 172.20.152.220 → 224.0.0.251  MDNS 92 Standard query 0x0000 ANY theMothership7._dosvc._tcp.local, "QM" question
+   48 4.076813649 fe80::9f6e:2c76:65ea:5cee → ff02::fb     MDNS 112 Standard query 0x0000 ANY theMothership7._dosvc._tcp.local, "QM" question
+   49 4.298838357 fe80::5f73:fb39:41b3:e465 → ff02::fb     MDNS 277 Standard query response 0x0000 PTR, cache flush Sarah._dosvc._tcp.local SRV, cache flush 0 0 7680 Sarah.local TXT, cache flush A, cache flush 172.20.152.234 AAAA, cache flush fe80::5f73:fb39:41b3:e465
+   50 4.298838812 fe80::5f73:fb39:41b3:e465 → ff02::fb     MDNS 223 Standard query response 0x0000 SRV, cache flush 0 0 7680 Sarah.local TXT, cache flush A, cache flush 172.20.152.234 AAAA, cache flush fe80::5f73:fb39:41b3:e465
+   51 4.304890964 172.20.65.70 → 172.20.154.4 TCP 66 [TCP Port numbers reused] 59925 → 7680 [SYN] Seq=0 Win=64240 Len=0 MSS=1366 WS=256 SACK_PERM
+   52 4.304893049 172.20.152.234 → 224.0.0.251  MDNS 257 Standard query response 0x0000 PTR, cache flush Sarah._dosvc._tcp.local SRV, cache flush 0 0 7680 Sarah.local TXT, cache flush A, cache flush 172.20.152.234 AAAA, cache flush fe80::5f73:fb39:41b3:e465
+   53 4.304893524 172.20.152.234 → 224.0.0.251  MDNS 203 Standard query response 0x0000 SRV, cache flush 0 0 7680 Sarah.local TXT, cache flush A, cache flush 172.20.152.234 AAAA, cache flush fe80::5f73:fb39:41b3:e465
+   54 4.304929457 172.20.154.4 → 172.20.65.70 TCP 54 7680 → 59925 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+   55 4.350926682 172.20.152.220 → 224.0.0.251  MDNS 92 Standard query 0x0000 ANY theMothership7._dosvc._tcp.local, "QM" question
+   56 4.356813513 fe80::9f6e:2c76:65ea:5cee → ff02::fb     MDNS 112 Standard query 0x0000 ANY theMothership7._dosvc._tcp.local, "QM" question
+   57 4.708139667 172.20.152.220 → 224.0.0.251  MDNS 339 Standard query response 0x0000 PTR, cache flush theMothership7._dosvc._tcp.local SRV, cache flush 0 0 7680 theMothership7.local TXT, cache flush A, cache flush 172.20.152.220 AAAA, cache flu
