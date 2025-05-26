@@ -1,0 +1,8 @@
+#!/bin/bash
+./shift -e 0 input output
+diff -a input output
+echo $?
+
+./shift -e 2 input output
+diff -a input output
+echo $?
